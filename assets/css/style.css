@@ -99,18 +99,140 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
+  max-width: 1519px;
+  width: 91.80%; 
   margin: 0 auto;
 }
+
+* { box-sizing: border-box; }
 /*=================================
   Header styling starts here
 =================================*/
+header {
+  width: 100%;
+  padding-bottom: .5%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(204,204,204, .7);
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 { margin-top: 28px; }
+
+h1 a {
+  display: inline-block;
+  text-indent: -999999px;
+}
 
 
+h1 img { 
+  width: 162%;
+  float: left;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  flex-basis: 90.4%;
+  justify-content: space-between;
+}
+
+nav > a:after {
+  content: '\f0c9';
+  display: none;
+  position: absolute;
+  top: 21px;
+  right: 2%;
+  color: #F3F6F8;
+  font-size: 26px;
+  font-family: 'FontAwesome';
+}
+
+.top-nav {
+  width: 75.67%;
+  margin-top: 34px;
+}
+
+.top-nav > li:not(:last-child) { margin-right: 5.5%; }
+
+.top-nav a { 
+  color: #F3F6F8;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.top-nav a:hover { color: #68BDE6; }
+
+.dropdown > a:after {
+  content: '\f107';
+  padding-left: 4%;
+  font-family: 'FontAwesome';
+  font-size: 18px;
+}
+
+.dropdown { position: relative; }
+
+.dropdown-content { 
+  display: none;
+  position: absolute;
+}
+
+.dropdown .dropdown-content li {
+  margin-top: 6px;
+  display: block;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  width: 100%;
+  display: block;
+  border: 1px solid #68BDE6;
+  background-color: rgba(204,204,204, .7);
+}
+
+.side-content {
+  width: 14%;
+  margin-top: 21px;
+}
+
+.side-content [title=Sign-in] {
+  padding: 13px 30px;
+  border-radius: 34px;
+  background-color: #FFF;
+  font-size: 19px;
+  text-transform: capitalize;
+}
+
+[title=Sign-in]:hover { 
+  background-color: #9E18AA;
+  color: #FFF;
+}
+
+.side-content li:first-child { margin-right: 9%; }
+
+.side-content [title=Search]:before {
+  content: '\f0ac';
+  color: #FFF;
+  font-family: 'FontAwesome';
+  font-size: 26px;
+  float: left;
+  text-indent: 0;
+}
 
 
+.side-content [title=Search]:hover:before {
+  color: #9E18AA;
+}
 
+[title=Search] {
+  display: inline-block;
+  vertical-align: bottom;
+  text-indent: -9999px;
+}
 
 /*=================================
   Header styling ends here
@@ -119,13 +241,627 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.getstarted-container {
+  padding-top: 159px;
+  background-image: url(https://via.placeholder.com/300x500);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.getstarted-container h4 {
+  margin-bottom: 53px;
+  font-size: 49px;
+  font-weight: 600;
+}
+
+.getstarted-container a {
+  padding: 1.5% 3.4%;
+  margin-bottom: 35%;
+  border-radius: 34px;
+  background-color: #FFF;
+  color: #4583C8;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.getstarted-container a:hover {
+  background-color: #9E18AA;
+  color: #FFF;
+}
+/* getstarted-container styling end here */
+.freedom-container .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.freedom-container .freedomleft {
+  width: 40.74%;
+  margin-top: 193px;
+}
+
+.freedom-container .freedomright {
+  width: 42.46%;
+}
+
+.freedomleft h3 {
+  font-size: 87px;
+  font-weight: 600;
+}
+
+.freedomright p {
+  margin-top: 199px;
+  color: #162A3A;
+  font-size: 23px;
+  line-height: 43px;
+}
+
+.freedomright a:after {
+  content: '\f105';
+  padding-left: 8px;
+  font-family: 'Fontawesome';
+}
+
+.freedomright a {
+  padding-bottom: 4px;
+  margin: 43px 0 215px;
+  position: relative;
+  color: #021F6D;
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.freedomright a:before {
+  content: '';
+  width: 91%;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  bottom: 2px;
+  background-color: #BDBDBD;;
+}
+
+.freedomright a:hover { color: #68BDE6; }
+
+/* freedom-container styling end here */
+
+.Designfreedom-container .wrapper {
+  width: 99%;
+  border: 3px solid #000;
+}
+
+.Designfreedom-container .first {
+  display: flex;
+  border-bottom: 3px solid #000;
+  justify-content: space-between;
+}
+
+.Designfreedom-container .firstleft {
+  padding-left: 8.4%;
+  flex-basis: 41%;
+}
+
+.Designfreedom-container .firstleft h4 {
+  margin: 124px 0 4px;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.Designfreedom-container .firstleft h5 {
+  margin-bottom: 36px;
+  font-size: 49px;
+  text-transform: capitalize;
+}
+
+.Designfreedom-container .firstleft p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.Designfreedom-container .firstleft a:after {
+  content: '\f105';
+  padding-left: 6px;
+  font-family: 'Fontawesome';
+}
+
+.Designfreedom-container .firstleft a {
+  padding-bottom: 4px;
+  margin: 51px 0 163px;
+  position: relative;
+  color: #021F6D;
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.Designfreedom-container .firstleft a:before { 
+  content: '';
+  width: 91%;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  bottom: 2px;
+  background-color: #BDBDBD;
+}
+
+.Designfreedom-container .firstright { flex-basis: 50% }
+.Designfreedom-container .firstright figure { height: 100%; }
+
+.Designfreedom-container .firstright img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.Designfreedom-container .second {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Designfreedom-container .second-left {
+  border-right: 3px solid #000;
+  flex-basis: 50%;
+}
+
+.Designfreedom-container .second-left img { width: 100%; }
+
+.Designfreedom-container .second-left h4 {
+  padding: 0 17%;
+  margin: 124px 0 4px;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.Designfreedom-container .second-left h5 {
+  padding: 0 16.4%;
+  margin-bottom: 36px;
+  font-size: 49px;
+  text-transform: capitalize;
+}
+
+.Designfreedom-container .second-left p {
+  padding: 0 17.2%;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.Designfreedom-container .second-left a:after {
+  content: '\f105';
+  padding-left: 6px;
+  font-family: 'Fontawesome';
+}
+
+.Designfreedom-container .second-left a:before {
+  content: '';
+  width: 91%;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  bottom: 2px;
+  background-color: #BDBDBD;
+}
+
+.Designfreedom-container .second-left a {
+  margin: 19% 17% 10%;
+  padding-bottom: 4px;
+  position: relative;
+  color: #021F6D;
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.Designfreedom-container .second-left a:hover { color: #68BDE6; }
+.Designfreedom-container .second-right { flex-basis: 50%; }
+
+.Designfreedom-container .second-right h4 {
+  padding: 0 16%;
+  margin: 124px 0 4px;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.Designfreedom-container .second-right h5 {
+  padding: 0 15.4%;
+  margin-bottom: 36px;
+  font-size: 49px;
+  text-transform: capitalize;
+}
+
+.Designfreedom-container .second-right p {
+  padding: 0 16.2%;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.Designfreedom-container .second-right a:after {
+  content: '\f105';
+  padding-left: 6px;
+  font-family: 'Fontawesome';
+}
+
+.Designfreedom-container .second-right a {
+  margin: 14% 16% 10%;
+  padding-bottom: 4px;
+  position: relative;
+  color: #021F6D;
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.Designfreedom-container .second-right a:before { 
+  content: '';
+  width: 91%;
+  height: 3px;
+  position: absolute;
+  bottom: 2px;
+  background-color: #BDBDBD;
+}
+
+.Designfreedom-container .second-right a:hover { color: #68BDE6; }
+
+/* Designfreedom-container styling end here */
+
+.powerful-container h3 {
+  width: 60%;
+  margin: 19% auto 12%;
+  font-size: 87px;
+  font-weight: 600;
+}
+
+.powerful-container .first {
+  display: flex;
+  justify-content: space-between;
+}
+
+.powerful-container .powerfirstleft {
+  width: 37%;
+  margin-left: 4%;
+}
+
+.powerful-container .powerfirstleft h6 {
+  padding-left: 10%;
+  margin: 26px 0 13px;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.powerful-container .powerfirstleft p {
+  padding-left: 10%;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.powerful-container .powerfirstright {
+  width: 37%;
+  margin-right: 7%;
+}
+
+.powerful-container .powerfirstright h6 {
+  margin: 48px 0 13px;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.powerful-container .powerfirstright p {
+  font-size: 19px;
+  line-height: 1.5;
+}
+/*=============== first styling ends here============== */
+.powerful-container .powersecond {
+  display: flex;
+  justify-content: space-between;
+}
+
+.powerful-container .powersecondleft {
+  width: 37%;
+  margin-left: 4%;
+}
+
+.powerful-container .powersecondleft h6 {
+  padding-left: 10%;
+  margin: 26px 0 13px;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.powerful-container .powersecondleft p {
+  padding-left: 10%;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.powerful-container .powersecondright {
+  width: 37%;
+  margin: 9% 7% 0;
+}
+
+.powerful-container .powersecondright h6 {
+  margin: 48px 0 13px;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.powerful-container .powersecondright p {
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+/*=============== second styling ends here============== */
+.powerful-container .wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.powerful-container .powerthird {
+  margin-top: 5.8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.powerful-container .powerthirdleft {
+  width: 37%;
+  margin-left: 4%;
+}
+
+.powerful-container .powerthirdleft h6 {
+  padding-left: 10%;
+  margin: 26px 0 13px;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.powerful-container .powerthirdleft p {
+  padding-left: 10%;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.powerful-container .powerthirdright {
+  width: 37%;
+  margin: 4.8%  7% 0;
+}
+
+.powerful-container .powerthirdright h6 {
+  text-transform: capitalize;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 48px 0 13px;
+}
+
+.powerful-container .powerthirdright p {
+  font-size: 19px;
+  line-height: 1.5;
+}
+/*=============== third styling ends here============== */
+.powerful-container a {
+  margin: 140px 0 250px;
+  position: relative;
+  color: #000;
+  font-size: 51px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.powerful-container a:after {
+  content: '\f101';
+  padding-left: 7px;
+  font-family: 'FontAwesome';
+  font-size: 42px;
+}
+
+.powerful-container a:hover { color: #68BDE6; }
+
+.powerful-container a:before {
+  content: '';
+  width: 92%;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: #000;
+}
+/*=============== powerful-container styling ends here============== */
+.manage-container .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.manageleft {
+  width: 50%;
+  padding-left: 9%;
+}
+
+.manageleft .left1 h4 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.manageleft .left1 p {
+  margin: 31px 0 76px;
+  color: #435470;
+  font-size: 23px;
+  line-height: 2;
+}
+
+.manageleft .left1 a {
+  padding-bottom: 4px;
+  position: relative;
+  color: #021F6D;
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.manageleft .left1 a:hover { color: #68BDE6; }
+
+.manageleft .left1 a:after {
+  content: '\f105';
+  padding-left: 6px;
+  font-family: 'Fontawesome';
+}
+
+.manageleft .left1 a:before {
+  content: '';
+  width: 91%;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  bottom: 1px;
+  background-color: #BDBDBD;
+}
+
+.manageleft .left2 h4 {
+  margin: 129px 0 33px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.manageleft .left2 p {
+  font-size: 23px;
+  line-height: 2;
+  color: #435470;
+}
+
+.manageleft .left2 p:nth-child(3) { margin-top: 40px; }
+
+.manageleft .left2 a {
+  padding-bottom: 4px;
+  margin: 78px 0 127px;
+  position: relative;
+  color: #021F6D;
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.manageleft .left2 a:hover { color: #68BDE6; }
+
+.manageleft .left2 a:after {
+  content: '\f105';
+  padding-left: 6px;
+  font-family: 'Fontawesome';
+}
+
+.manageleft .left2 a:before {
+  content: '';
+  width: 91%;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  bottom: 1px;
+  background-color: #BDBDBD;
+}
+
+.manageright { width: 35%; }
+
+.manageright figure { height: 44.4%; }
+
+.manageright img { height: 100%; }
+
+/*=============== Manage-container styling ends here============== */
+.howto-container { background-color: #526DD8; }
+
+.howto-container .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.howto-container .howtoleft {
+  width: 50%;
+  padding-left: 8.5%;
+}
+
+.howtoleft h2 {
+  margin-top: 29%;
+  color: #FFFFFF;
+  font-size: 127px;
+  font-weight: 600
+}
+
+.howtoleft ul a {
+  padding-bottom: 4px;
+  position: relative;
+  color: #FFF;
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: capitalize;
+} 
+
+.howtoleft ul a:hover { color: #04AA6D; }
+
+.howtoleft ul a:after {
+  content: '\f105';
+  padding-left: 6px;
+  font-family: 'Fontawesome';
+} 
+
+.howtoleft ul a:before {
+  content: '';
+  width: 91%;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  bottom: 1px;
+  background-color: #FFF;
+} 
+
+.howtoleft ul { margin: 115px 0 208px; }
+.howtoleft ul li:first-child { margin-right: 8%; }
 
 
+.howto-container .howtoright {
+  width: 44%;
+  padding-right: 8%;
+}
 
+.howtoright h6 {
+  padding:200px 0 94px;
+  position: relative;
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 600;
+}
 
+.howtoright h6:after {
+  content: '';
+  width: 6.4%;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  background-color: #C4CDF1;
+}
 
+.howtoright p {
+  color: #E3F2F8;
+  font-size: 23px;
+}
 
+.howtoright  ol li {
+  display: revert;
+  color: #E3F2F8;
+  font-size: 24px;
+  list-style-type: decimal;
+}
 
+.howtoright li:not(:last-child) { padding-bottom: 52px; }
+
+/*=============== howto-container styling ends here============== */
 
 /*=================================
   main styling ends here
@@ -134,10 +870,214 @@ li {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer .wrapper { width: 81.25%; }
+
+.horizontal-container {
+  padding: 9% 0 22%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.horizontal-container h6 {
+  padding-bottom: 13%;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.horizontal-container .first{ width: 10.21%; }
+
+.horizontal-container .first ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-container .first a {
+  padding-top: 10%;
+  color: #A4AAAF;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.horizontal-container .first a:hover { color: #33D4D6; }
+.horizontal-container .second { width: 13.12%; }
+
+.horizontal-container .second ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-container .second a {
+  padding-top: 10%;
+  color: #A4AAAF;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.horizontal-container .second a:hover { color: #33D4D6; }
+.horizontal-container .third { width: 11.91%; }
+
+.horizontal-container .third ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-container .third a {
+  padding-top: 10%;
+  color: #A4AAAF;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.horizontal-container .third a:hover { color: #33D4D6; }
+.horizontal-container .fourth { width: 10.21%; }
+
+.horizontal-container .fourth ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-container .fourth a {
+  padding-top: 10%;
+  color: #A4AAAF;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.horizontal-container .fourth a:hover { color: #33D4D6; }
+.horizontal-container .fifth { width: 24.95%; }
+
+.horizontal-container .fifth > a {
+  width: 31%;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.horizontal-container .fifth img { float: left; }
+
+.horizontal-container .fifth p {
+  color: #646F80;
+  font-size: 17px;
+}
+
+.fifth p a:hover { color: #33D4D6; }
+
+.horizontal-container .fifth p:nth-child(2) { margin: 34px 0 19px; }
+.horizontal-container .fifth p:nth-child(3) { margin-bottom: 24px; }
+.socialmedia { padding-top: 36px; }
+.socialmedia li { margin-right: 4%; }
 
 
+.socialmedia [title=Facebook] {
+  display: inline-block;
+  text-indent: -9999px;
+}
 
+.socialmedia [title=Facebook]:after {
+  content: '\f082';
+  color: #46525C;
+  font-family: 'FontAwesome';
+  font-size: 27px;
+  float: left;
+  text-indent: 0;
+}
 
+.socialmedia [title=Facebook]:hover:after { color: #04AA6D; }
+
+.socialmedia [title=Twitter] {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.socialmedia [title=Twitter]:after {
+  content: '\f099';
+  color: #46525C;
+  font-family: 'FontAwesome';
+  font-size: 27px;
+  float: left;
+  text-indent: 0;
+}
+
+.socialmedia [title=Twitter]:hover:after { color: #04AA6D; }
+
+.socialmedia [title=Google] {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.socialmedia [title=Google]:after {
+  content: '\f0d5';
+  color: #46525C;
+  font-family: 'FontAwesome';
+  font-size: 27px;
+  float: left;
+  text-indent: 0;
+}
+
+.socialmedia [title=Google]:hover:after { color: #04AA6D; }
+
+.socialmedia > li:nth-child(4) a {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.socialmedia > li:nth-child(4) a:after {
+  content: '\f167';
+  color: #46525C;
+  font-family: 'FontAwesome';
+  font-size: 27px;
+  float: left;
+  text-indent: 0;
+}
+
+.socialmedia > li:nth-child(4) a:hover:after { color: #04AA6D; }
+
+.socialmedia [title=Pinterest] {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.socialmedia [title=Pinterest]:after {
+  content: '\f231';
+  color: #46525C;
+  font-family: 'FontAwesome';
+  font-size: 27px;
+  float: left;
+  text-indent: 0;
+}
+
+.socialmedia [title=Pinterest]:hover:after { color: #04AA6D; }
+
+.socialmedia [title=Instagram] {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.socialmedia [title=Instagram]:after {
+  content: '\f16d';
+  color: #46525C;
+  font-family: 'FontAwesome';
+  font-size: 27px;
+  float: left;
+  text-indent: 0;
+}
+
+.socialmedia [title=Instagram]:hover:after { color: #04AA6D; }
+
+.socialmedia [title=Linkdin] {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.socialmedia [title=Linkdin]:after {
+  content: '\f0e1';
+  color: #46525C;
+  font-family: 'FontAwesome';
+  font-size: 27px;
+  float: left;
+  text-indent: 0;
+}
+
+.socialmedia [title=Linkdin]:hover:after { color: #04AA6D; }
 
 
 
@@ -146,9 +1086,255 @@ li {
 =================================*/ 
 
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 1024px) {
+  h1 { margin-right: 8%; }
+  .top-nav { width: 74.67%; }
+  .side-content { width: 22%; }
+  .freedomleft h3 { font-size: 81px; }
+  .powerful-container h3 { font-size: 63px; }
+  .howto-container .howtoleft { padding-left: 5.5%; }
+  .howtoleft h2 { font-size: 80px; }
+  .howtoright h6 { padding-top: 148px; }
+  
 
+  .howto-container .howtoright {
+    width: 48%;
+    padding: 0 2% 4%;
+  }
 
+  .horizontal-container { flex-wrap: wrap; }
+  .horizontal-container .first { width: 18.20%; }
+  .horizontal-container .second { width: 18.20%; }
+  .horizontal-container .third { width: 18.20%; }
+  .horizontal-container .fourth { width: 18.20%; }
+  .horizontal-container .fifth > a { width: 95px; }
+
+  .horizontal-container .fifth { 
+    width: 100%;
+    margin-top: 20%;
+    text-align: center;
+  }
 
 }  
+
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+  h1 { margin-right: 6%;}
+  .top-nav { width: 74.67%; }
+  .top-nav > li:not(:last-child) { margin-right: 1.5%; }
+  .top-nav a { font-size: 14px; }
+  .side-content { width: 27%; }
+  .side-content [title=Sign-in] { padding: 9px 20px; }
+
+  .freedom-container .wrapper { flex-wrap: wrap; }
+  .freedom-container .freedomleft { width: 100%; }
+
+  .freedomleft h3 {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .freedom-container .freedomright { width: 100%;}
+  .Designfreedom-container .first { flex-wrap: wrap;}
+  .Designfreedom-container .firstleft { flex-basis: 100%}
+  .Designfreedom-container .firstleft a { margin-bottom: 80px; }
+
+  .Designfreedom-container .firstright {
+    margin: 14% 0 20%;
+    flex-basis: 100%;
+  }
+
+  .Designfreedom-container .second { flex-wrap: wrap;}
+  .Designfreedom-container .second-left { flex-basis: 100%; }
+
+  .Designfreedom-container .second-right {
+    margin: 14% 0;
+    flex-basis: 100%;
+  }
+
+  .powerful-container h3 { font-size: 44px; }
+  .manage-container .wrapper { 
+    width: 98%;
+    flex-wrap: wrap;
+  }
+  .manageleft { width: 100%; }
+
+  .manageright {
+    width: 100%;
+    margin-bottom: 13%;
+  }
+
+  .manageright img { height: auto; }
+  .howto-container .wrapper {
+    width: 94%;
+    flex-wrap: wrap;
+  }
+
+  .howto-container .howtoleft {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .howto-container .howtoright { width: 100%; }
+
+  .howtoright h6 {
+    padding-top: 9px;
+    text-align: center;
+  }
+  .howtoright h6:after { left: 46%; }
+  .howtoright ol { padding: 0 4%; }
+
+  .horizontal-container { padding-top: 17%; }
+
+  .horizontal-container .first {
+    width: 50%;
+    text-align: center;
+  }
+
+  .horizontal-container .second {
+    width: 50%;
+    text-align: center;
+  }
+
+  .horizontal-container .third {
+    width: 50%;
+    margin-top: 22%;
+    text-align: center;
+  }
+
+  .horizontal-container .fourth {
+    width: 50%;
+    margin-top: 22%;
+    text-align: center;
+  }
+} 
+
+@media only screen and (max-width: 768px) {
+  h1 { margin-right: 8%; }
+  .top-nav { width: 100%; }
+  .side-content { display: none; }
+
+  .Designfreedom-container .firstleft {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .freedom-container .freedomright { text-align: center; }
+
+  .manageleft {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .manageleft p { padding: 0 8%; } 
+  .manageright { margin-bottom: 20%; }
+  .manageright img { height: auto; }
+  .Designfreedom-container .second-left { text-align: center; }
+  .Designfreedom-container .second-right { text-align: center; }
+  .Designfreedom-container .firstleft p { padding: 0 8.5%; }
+
+  .powerful-container h3 {
+    margin-top: 25%;
+    font-size: 33px;
+    text-align: center;
+  }
+
+  .powerful-container .first {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .powerful-container .powerfirstleft {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .powerful-container .powerfirstleft h6 { padding-left: 0; }
+  .powerful-container .powerfirstleft p { padding-left: 0; }
+
+  .powerful-container .powerfirstright {
+    width: 100%;
+    margin: 22% 0;
+  }
+
+  .powerful-container .powersecond {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .powerful-container .powersecondleft {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .powerful-container .powersecondleft h6 { padding-left: 0; }
+  .powerful-container .powersecondleft p { padding-left: 0; }
+
+  .powerful-container .powersecondright {
+    width: 100%;
+    margin: 22% 0;
+  }
+
+  .powerful-container .powerthird {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .powerful-container .powerthirdleft {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .powerful-container .powerthirdleft h6 { padding-left: 0; }
+  .powerful-container .powerthirdleft p { padding-left: 0; }
+
+  .powerful-container .powerthirdright {
+    width: 100%;
+    margin: 22% 0 0 ;
+  }
+
+  .howtoleft ul { margin-bottom: 116px; }
+}
+
+@media only screen and (max-width: 480px) {
+  .top-nav { display: none; }
+  nav > a:after { display: block; }
+  .freedomright p { margin-top: 31px; }
+  .Designfreedom-container .firstleft h4 { font-size: 36px; }
+  .Designfreedom-container .firstleft h5 { font-size: 36px; }
+  .Designfreedom-container .firstright { margin-bottom: 15%; }
+  .Designfreedom-container .second-left h4 { font-size: 36px; }
+  .Designfreedom-container .second-left h5 { font-size: 36px; }
+  .Designfreedom-container .second-right h4 { font-size: 36px; }
+  .Designfreedom-container .second-right h5 { font-size: 36px; }
+
+  .powerful-container a { 
+    margin: 34px 0 139px;
+    font-size: 25px;
+  }
+
+  .powerful-container a:after { font-size: 25px; }
+  .manageleft .left1 h4 { font-size: 25px; }
+  .manageleft .left2 h4 {font-size: 25px; }
+  .howtoleft h2 { font-size: 35px; }
+  .horizontal-container .first { width: 100%; }
+
+  .horizontal-container .second {
+    width: 100%;
+    margin: 23% 0
+  }
+
+  .horizontal-container .third { width: 100%; }
+
+  .horizontal-container .fourth {
+    width: 100%;
+    margin: 23% 0
+  }
+
+  .horizontal-container h6 { padding-bottom: 0; }
+
+  .socialmedia li { margin-right: 2%; }
+
+
+}
